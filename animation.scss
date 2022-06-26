@@ -1,0 +1,98 @@
+/* ----- variables ----- */
+$font-family: 'Segoe UI', Arial, sans-serif;
+$fw700: 700;
+$color-default: #ccc;
+$letter-size: 13vh;
+$letter-count: 10;
+$full-height: 100vh;
+$colors: #fd6347, #4fdf78, #5de196, #eeea78, #f48024, #602ecc,
+#F9BF3B, #F64747, #dd4fcc, #19B5FE;
+
+$letters: M, e, m, o, r, y, G, a, m, e;
+
+/* ----- mixin ----- */
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+  box-sizing: $box-model;
+}
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+* {
+  @include reset;
+}
+
+body {
+  height: $full-height;
+  @include centered;
+  overflow: hidden;
+  font-family: $font-family;
+}
+
+.letters {
+  position: absolute;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  color: $color-default;
+  font-size: $letter-size;
+}
+
+@for $i from 1 through $letter-count {
+  $rotation: random(360);
+  $colors-random: nth($colors, random(length($colors)));
+
+  @keyframes animLetter-#{$i} {
+    0% {
+      transform: translate(random(200) - 100 + px, random(200) - 100 + px)
+        rotate(#{$rotation}deg);
+    }
+    20% {
+      transform: translate(random(200) - 100 + px, random(200) - 100 + px)
+        rotate(#{$rotation}deg);
+    }
+    40% {
+      transform: translate(random(200) - 100 + px, random(200) - 100 + px)
+        rotate(#{$rotation}deg);
+    }
+    60% {
+      transform: translate(random(200) - 100 + px, random(200) - 100 + px)
+        rotate(#{$rotation}deg);
+    }
+    80% {
+      transform: translate(random(200) - 100 + px, random(200) - 100 + px)
+        rotate(#{$rotation}deg);
+    }
+    100% {
+      transform: translate(0) rotate(0);
+      // color: #f48024;
+    }
+  }
+  .letter {
+    &:nth-child(n + 7){
+      font-weight: $fw700;
+    }
+    &:nth-child(#{$i}):before {
+      content: "#{nth($letters, $i)}";
+      position: absolute;
+      color: $colors-random;
+      animation-name: animLetter-#{$i};
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+}

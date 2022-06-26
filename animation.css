@@ -1,0 +1,612 @@
+/* ----- variables ----- */
+/* ----- mixin ----- */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.letters {
+  position: absolute;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  color: #ccc;
+  font-size: 13vh;
+}
+
+@-webkit-keyframes animLetter-1 {
+  0% {
+    transform: translate(-70px, -52px) rotate(347deg);
+  }
+  20% {
+    transform: translate(-95px, 37px) rotate(347deg);
+  }
+  40% {
+    transform: translate(65px, 52px) rotate(347deg);
+  }
+  60% {
+    transform: translate(72px, -59px) rotate(347deg);
+  }
+  80% {
+    transform: translate(95px, 69px) rotate(347deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-1 {
+  0% {
+    transform: translate(-70px, -52px) rotate(347deg);
+  }
+  20% {
+    transform: translate(-95px, 37px) rotate(347deg);
+  }
+  40% {
+    transform: translate(65px, 52px) rotate(347deg);
+  }
+  60% {
+    transform: translate(72px, -59px) rotate(347deg);
+  }
+  80% {
+    transform: translate(95px, 69px) rotate(347deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(1):before {
+  content: "M";
+  position: absolute;
+  color: #F9BF3B;
+  -webkit-animation-name: animLetter-1;
+          animation-name: animLetter-1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-2 {
+  0% {
+    transform: translate(-73px, 41px) rotate(85deg);
+  }
+  20% {
+    transform: translate(-99px, 55px) rotate(85deg);
+  }
+  40% {
+    transform: translate(34px, 0px) rotate(85deg);
+  }
+  60% {
+    transform: translate(1px, 21px) rotate(85deg);
+  }
+  80% {
+    transform: translate(-86px, 100px) rotate(85deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-2 {
+  0% {
+    transform: translate(-73px, 41px) rotate(85deg);
+  }
+  20% {
+    transform: translate(-99px, 55px) rotate(85deg);
+  }
+  40% {
+    transform: translate(34px, 0px) rotate(85deg);
+  }
+  60% {
+    transform: translate(1px, 21px) rotate(85deg);
+  }
+  80% {
+    transform: translate(-86px, 100px) rotate(85deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(2):before {
+  content: "e";
+  position: absolute;
+  color: #fd6347;
+  -webkit-animation-name: animLetter-2;
+          animation-name: animLetter-2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-3 {
+  0% {
+    transform: translate(20px, 23px) rotate(288deg);
+  }
+  20% {
+    transform: translate(61px, -32px) rotate(288deg);
+  }
+  40% {
+    transform: translate(-71px, -84px) rotate(288deg);
+  }
+  60% {
+    transform: translate(-42px, 1px) rotate(288deg);
+  }
+  80% {
+    transform: translate(85px, 50px) rotate(288deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-3 {
+  0% {
+    transform: translate(20px, 23px) rotate(288deg);
+  }
+  20% {
+    transform: translate(61px, -32px) rotate(288deg);
+  }
+  40% {
+    transform: translate(-71px, -84px) rotate(288deg);
+  }
+  60% {
+    transform: translate(-42px, 1px) rotate(288deg);
+  }
+  80% {
+    transform: translate(85px, 50px) rotate(288deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(3):before {
+  content: "m";
+  position: absolute;
+  color: #4fdf78;
+  -webkit-animation-name: animLetter-3;
+          animation-name: animLetter-3;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-4 {
+  0% {
+    transform: translate(-2px, -22px) rotate(312deg);
+  }
+  20% {
+    transform: translate(-91px, -8px) rotate(312deg);
+  }
+  40% {
+    transform: translate(10px, -94px) rotate(312deg);
+  }
+  60% {
+    transform: translate(68px, -75px) rotate(312deg);
+  }
+  80% {
+    transform: translate(-98px, 75px) rotate(312deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-4 {
+  0% {
+    transform: translate(-2px, -22px) rotate(312deg);
+  }
+  20% {
+    transform: translate(-91px, -8px) rotate(312deg);
+  }
+  40% {
+    transform: translate(10px, -94px) rotate(312deg);
+  }
+  60% {
+    transform: translate(68px, -75px) rotate(312deg);
+  }
+  80% {
+    transform: translate(-98px, 75px) rotate(312deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(4):before {
+  content: "o";
+  position: absolute;
+  color: #f48024;
+  -webkit-animation-name: animLetter-4;
+          animation-name: animLetter-4;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-5 {
+  0% {
+    transform: translate(-43px, 67px) rotate(186deg);
+  }
+  20% {
+    transform: translate(-86px, 80px) rotate(186deg);
+  }
+  40% {
+    transform: translate(-67px, -19px) rotate(186deg);
+  }
+  60% {
+    transform: translate(-32px, 79px) rotate(186deg);
+  }
+  80% {
+    transform: translate(38px, 90px) rotate(186deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-5 {
+  0% {
+    transform: translate(-43px, 67px) rotate(186deg);
+  }
+  20% {
+    transform: translate(-86px, 80px) rotate(186deg);
+  }
+  40% {
+    transform: translate(-67px, -19px) rotate(186deg);
+  }
+  60% {
+    transform: translate(-32px, 79px) rotate(186deg);
+  }
+  80% {
+    transform: translate(38px, 90px) rotate(186deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(5):before {
+  content: "r";
+  position: absolute;
+  color: #602ecc;
+  -webkit-animation-name: animLetter-5;
+          animation-name: animLetter-5;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-6 {
+  0% {
+    transform: translate(0px, -33px) rotate(128deg);
+  }
+  20% {
+    transform: translate(66px, 47px) rotate(128deg);
+  }
+  40% {
+    transform: translate(-31px, -22px) rotate(128deg);
+  }
+  60% {
+    transform: translate(23px, -74px) rotate(128deg);
+  }
+  80% {
+    transform: translate(-74px, -44px) rotate(128deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-6 {
+  0% {
+    transform: translate(0px, -33px) rotate(128deg);
+  }
+  20% {
+    transform: translate(66px, 47px) rotate(128deg);
+  }
+  40% {
+    transform: translate(-31px, -22px) rotate(128deg);
+  }
+  60% {
+    transform: translate(23px, -74px) rotate(128deg);
+  }
+  80% {
+    transform: translate(-74px, -44px) rotate(128deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(6):before {
+  content: "y";
+  position: absolute;
+  color: #F64747;
+  -webkit-animation-name: animLetter-6;
+          animation-name: animLetter-6;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-7 {
+  0% {
+    transform: translate(-53px, 23px) rotate(209deg);
+  }
+  20% {
+    transform: translate(-70px, -97px) rotate(209deg);
+  }
+  40% {
+    transform: translate(-66px, 71px) rotate(209deg);
+  }
+  60% {
+    transform: translate(47px, -45px) rotate(209deg);
+  }
+  80% {
+    transform: translate(47px, 26px) rotate(209deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-7 {
+  0% {
+    transform: translate(-53px, 23px) rotate(209deg);
+  }
+  20% {
+    transform: translate(-70px, -97px) rotate(209deg);
+  }
+  40% {
+    transform: translate(-66px, 71px) rotate(209deg);
+  }
+  60% {
+    transform: translate(47px, -45px) rotate(209deg);
+  }
+  80% {
+    transform: translate(47px, 26px) rotate(209deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(7):before {
+  content: "G";
+  position: absolute;
+  color: #dd4fcc;
+  -webkit-animation-name: animLetter-7;
+          animation-name: animLetter-7;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-8 {
+  0% {
+    transform: translate(17px, 79px) rotate(323deg);
+  }
+  20% {
+    transform: translate(-93px, 60px) rotate(323deg);
+  }
+  40% {
+    transform: translate(72px, -84px) rotate(323deg);
+  }
+  60% {
+    transform: translate(89px, -6px) rotate(323deg);
+  }
+  80% {
+    transform: translate(49px, 92px) rotate(323deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-8 {
+  0% {
+    transform: translate(17px, 79px) rotate(323deg);
+  }
+  20% {
+    transform: translate(-93px, 60px) rotate(323deg);
+  }
+  40% {
+    transform: translate(72px, -84px) rotate(323deg);
+  }
+  60% {
+    transform: translate(89px, -6px) rotate(323deg);
+  }
+  80% {
+    transform: translate(49px, 92px) rotate(323deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(8):before {
+  content: "a";
+  position: absolute;
+  color: #F64747;
+  -webkit-animation-name: animLetter-8;
+          animation-name: animLetter-8;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-9 {
+  0% {
+    transform: translate(12px, -73px) rotate(169deg);
+  }
+  20% {
+    transform: translate(-22px, -27px) rotate(169deg);
+  }
+  40% {
+    transform: translate(-24px, -74px) rotate(169deg);
+  }
+  60% {
+    transform: translate(-38px, 21px) rotate(169deg);
+  }
+  80% {
+    transform: translate(41px, 18px) rotate(169deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-9 {
+  0% {
+    transform: translate(12px, -73px) rotate(169deg);
+  }
+  20% {
+    transform: translate(-22px, -27px) rotate(169deg);
+  }
+  40% {
+    transform: translate(-24px, -74px) rotate(169deg);
+  }
+  60% {
+    transform: translate(-38px, 21px) rotate(169deg);
+  }
+  80% {
+    transform: translate(41px, 18px) rotate(169deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(9):before {
+  content: "m";
+  position: absolute;
+  color: #19B5FE;
+  -webkit-animation-name: animLetter-9;
+          animation-name: animLetter-9;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animLetter-10 {
+  0% {
+    transform: translate(2px, 37px) rotate(244deg);
+  }
+  20% {
+    transform: translate(-6px, 52px) rotate(244deg);
+  }
+  40% {
+    transform: translate(-12px, 60px) rotate(244deg);
+  }
+  60% {
+    transform: translate(73px, 81px) rotate(244deg);
+  }
+  80% {
+    transform: translate(24px, -65px) rotate(244deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes animLetter-10 {
+  0% {
+    transform: translate(2px, 37px) rotate(244deg);
+  }
+  20% {
+    transform: translate(-6px, 52px) rotate(244deg);
+  }
+  40% {
+    transform: translate(-12px, 60px) rotate(244deg);
+  }
+  60% {
+    transform: translate(73px, 81px) rotate(244deg);
+  }
+  80% {
+    transform: translate(24px, -65px) rotate(244deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+.letter:nth-child(n+7) {
+  font-weight: 700;
+}
+.letter:nth-child(10):before {
+  content: "e";
+  position: absolute;
+  color: #f48024;
+  -webkit-animation-name: animLetter-10;
+          animation-name: animLetter-10;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}/*# sourceMappingURL=animation.css.map */
